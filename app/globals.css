@@ -1,0 +1,388 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 221.2 83.2% 53.3%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 221.2 83.2% 53.3%;
+
+    --radius: 0.5rem;
+
+    /* Color palette variables */
+    --slate-500: 215 16% 47%;
+    --gray-500: 220 9% 46%;
+    --zinc-500: 240 5% 46%;
+    --red-500: 0 84% 60%;
+    --orange-500: 25 95% 53%;
+    --amber-500: 38 92% 50%;
+    --yellow-500: 48 96% 53%;
+    --lime-500: 85 78% 42%;
+    --green-500: 142 71% 45%;
+    --emerald-500: 160 84% 39%;
+    --teal-500: 173 80% 40%;
+    --cyan-500: 187 86% 53%;
+    --sky-500: 199 89% 48%;
+    --blue-500: 217 91% 60%;
+    --indigo-500: 239 84% 67%;
+    --violet-500: 258 90% 66%;
+    --purple-500: 270 95% 75%;
+    --fuchsia-500: 292 91% 73%;
+    --pink-500: 330 81% 60%;
+    --rose-500: 350 89% 60%;
+  }
+
+  :root[data-color="slate"] {
+    --primary: 215 16% 47%;
+    --ring: 215 16% 47%;
+  }
+
+  :root[data-color="gray"] {
+    --primary: 220 9% 46%;
+    --ring: 220 9% 46%;
+  }
+
+  :root[data-color="zinc"] {
+    --primary: 240 5% 46%;
+    --ring: 240 5% 46%;
+  }
+
+  :root[data-color="red"] {
+    --primary: 0 84% 60%;
+    --ring: 0 84% 60%;
+  }
+
+  :root[data-color="orange"] {
+    --primary: 25 95% 53%;
+    --ring: 25 95% 53%;
+  }
+
+  :root[data-color="amber"] {
+    --primary: 38 92% 50%;
+    --ring: 38 92% 50%;
+  }
+
+  :root[data-color="yellow"] {
+    --primary: 48 96% 53%;
+    --ring: 48 96% 53%;
+  }
+
+  :root[data-color="lime"] {
+    --primary: 85 78% 42%;
+    --ring: 85 78% 42%;
+  }
+
+  :root[data-color="green"] {
+    --primary: 142 71% 45%;
+    --ring: 142 71% 45%;
+  }
+
+  :root[data-color="emerald"] {
+    --primary: 160 84% 39%;
+    --ring: 160 84% 39%;
+  }
+
+  :root[data-color="teal"] {
+    --primary: 173 80% 40%;
+    --ring: 173 80% 40%;
+  }
+
+  :root[data-color="cyan"] {
+    --primary: 187 86% 53%;
+    --ring: 187 86% 53%;
+  }
+
+  :root[data-color="sky"] {
+    --primary: 199 89% 48%;
+    --ring: 199 89% 48%;
+  }
+
+  :root[data-color="blue"] {
+    --primary: 217 91% 60%;
+    --ring: 217 91% 60%;
+  }
+
+  :root[data-color="indigo"] {
+    --primary: 239 84% 67%;
+    --ring: 239 84% 67%;
+  }
+
+  :root[data-color="violet"] {
+    --primary: 258 90% 66%;
+    --ring: 258 90% 66%;
+  }
+
+  :root[data-color="purple"] {
+    --primary: 270 95% 75%;
+    --ring: 270 95% 75%;
+  }
+
+  :root[data-color="fuchsia"] {
+    --primary: 292 91% 73%;
+    --ring: 292 91% 73%;
+  }
+
+  :root[data-color="pink"] {
+    --primary: 330 81% 60%;
+    --ring: 330 81% 60%;
+  }
+
+  :root[data-color="rose"] {
+    --primary: 350 89% 60%;
+    --ring: 350 89% 60%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 217.2 91.2% 59.8%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 224.3 76.3% 48%;
+  }
+
+  .dark[data-color="slate"] {
+    --primary: 215 16% 47%;
+    --ring: 215 16% 47%;
+  }
+
+  .dark[data-color="gray"] {
+    --primary: 220 9% 46%;
+    --ring: 220 9% 46%;
+  }
+
+  .dark[data-color="zinc"] {
+    --primary: 240 5% 46%;
+    --ring: 240 5% 46%;
+  }
+
+  .dark[data-color="red"] {
+    --primary: 0 84% 60%;
+    --ring: 0 84% 60%;
+  }
+
+  .dark[data-color="orange"] {
+    --primary: 25 95% 53%;
+    --ring: 25 95% 53%;
+  }
+
+  .dark[data-color="amber"] {
+    --primary: 38 92% 50%;
+    --ring: 38 92% 50%;
+  }
+
+  .dark[data-color="yellow"] {
+    --primary: 48 96% 53%;
+    --ring: 48 96% 53%;
+  }
+
+  .dark[data-color="lime"] {
+    --primary: 85 78% 42%;
+    --ring: 85 78% 42%;
+  }
+
+  .dark[data-color="green"] {
+    --primary: 142 71% 45%;
+    --ring: 142 71% 45%;
+  }
+
+  .dark[data-color="emerald"] {
+    --primary: 160 84% 39%;
+    --ring: 160 84% 39%;
+  }
+
+  .dark[data-color="teal"] {
+    --primary: 173 80% 40%;
+    --ring: 173 80% 40%;
+  }
+
+  .dark[data-color="cyan"] {
+    --primary: 187 86% 53%;
+    --ring: 187 86% 53%;
+  }
+
+  .dark[data-color="sky"] {
+    --primary: 199 89% 48%;
+    --ring: 199 89% 48%;
+  }
+
+  .dark[data-color="blue"] {
+    --primary: 217 91% 60%;
+    --ring: 217 91% 60%;
+  }
+
+  .dark[data-color="indigo"] {
+    --primary: 239 84% 67%;
+    --ring: 239 84% 67%;
+  }
+
+  .dark[data-color="violet"] {
+    --primary: 258 90% 66%;
+    --ring: 258 90% 66%;
+  }
+
+  .dark[data-color="purple"] {
+    --primary: 270 95% 75%;
+    --ring: 270 95% 75%;
+  }
+
+  .dark[data-color="fuchsia"] {
+    --primary: 292 91% 73%;
+    --ring: 292 91% 73%;
+  }
+
+  .dark[data-color="pink"] {
+    --primary: 330 81% 60%;
+    --ring: 330 81% 60%;
+  }
+
+  .dark[data-color="rose"] {
+    --primary: 350 89% 60%;
+    --ring: 350 89% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Portfolio Template Styles */
+.portfolio-minimal .hero-section {
+  @apply py-16 md:py-24;
+}
+
+.portfolio-minimal .project-card {
+  @apply rounded-lg overflow-hidden transition-all duration-300 hover:shadow-lg;
+}
+
+.portfolio-minimal .experience-card {
+  @apply rounded-lg transition-all duration-300 hover:shadow-lg;
+}
+
+.portfolio-creative .hero-section {
+  @apply py-20 md:py-32 relative overflow-hidden;
+}
+
+.portfolio-creative .hero-section::before {
+  content: "";
+  @apply absolute inset-0 bg-primary/10 -rotate-3 scale-110;
+}
+
+.portfolio-creative .project-card {
+  @apply rounded-xl overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-xl;
+}
+
+.portfolio-creative .project-card img {
+  @apply transition-all duration-300;
+}
+
+.portfolio-creative .project-card:hover img {
+  @apply scale-105;
+}
+
+.portfolio-creative .experience-card {
+  @apply rounded-xl transition-all duration-300 hover:-translate-y-2 hover:shadow-xl;
+}
+
+.portfolio-professional .hero-section {
+  @apply py-16 md:py-24 border-b;
+}
+
+.portfolio-professional .section-title {
+  @apply text-2xl font-bold relative pb-2 mb-6;
+}
+
+.portfolio-professional .section-title::after {
+  content: "";
+  @apply absolute bottom-0 left-0 h-1 w-16 bg-primary rounded;
+}
+
+.portfolio-professional .project-card {
+  @apply rounded-none border-l-4 border-primary transition-all duration-300 hover:shadow-md;
+}
+
+.portfolio-professional .experience-card {
+  @apply rounded-none border-l-4 border-primary transition-all duration-300 hover:shadow-md;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+.animate-fade-in-delay-1 {
+  animation: fadeIn 0.5s ease-out 0.1s forwards;
+  opacity: 0;
+}
+
+.animate-fade-in-delay-2 {
+  animation: fadeIn 0.5s ease-out 0.2s forwards;
+  opacity: 0;
+}
+
+.animate-fade-in-delay-3 {
+  animation: fadeIn 0.5s ease-out 0.3s forwards;
+  opacity: 0;
+}
