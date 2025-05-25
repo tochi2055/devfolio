@@ -13,7 +13,7 @@ const projects = [
     techStack: ["React", "TypeScript", "Tailwind CSS"],
     githubLink: "https://github.com/username/ecommerce-dashboard",
     liveLink: "https://ecommerce-dashboard.example.com",
-    imageUrl: "/placeholder.svg?height=200&width=300",
+    imageUrl: "/ui-ux-designs_1197721-77420.avif?height=200&width=300",
   },
   {
     id: "2",
@@ -22,7 +22,7 @@ const projects = [
     techStack: ["Next.js", "OpenWeather API", "CSS Modules"],
     githubLink: "https://github.com/username/weather-app",
     liveLink: "https://weather-app.example.com",
-    imageUrl: "/placeholder.svg?height=200&width=300",
+    imageUrl: "/realistic-weather-widget_1284-4092.avif?height=200&width=300",
   },
   {
     id: "3",
@@ -31,7 +31,7 @@ const projects = [
     techStack: ["React", "Firebase", "Material UI"],
     githubLink: "https://github.com/username/task-manager",
     liveLink: "https://task-manager.example.com",
-    imageUrl: "/placeholder.svg?height=200&width=300",
+    imageUrl: "/ui-ux-designs_1197721-77398.avif?height=200&width=300",
   },
 ]
 

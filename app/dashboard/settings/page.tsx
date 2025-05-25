@@ -75,7 +75,7 @@ export default function SettingsPage() {
 
   const removeAvatar = () => {
     setAvatar(null)
-    setAvatarPreview("/placeholder.svg?height=100&width=100")
+    setAvatarPreview("/cartoon-black-man-with-sunglasses-jacket-generative-ai_955925-34025.jpg?height=100&width=100")
   }
 
   const simulateUpload = () => {
@@ -212,7 +212,7 @@ export default function SettingsPage() {
                       <div className="relative h-24 w-24">
                         {avatarPreview && (
                           <img
-                            src={avatarPreview || "/placeholder.svg"}
+                            src={avatarPreview || "/cartoon-black-man-with-sunglasses-jacket-generative-ai_955925-34025.jpg"}
                             alt="Avatar"
                             className="h-24 w-24 rounded-full object-cover"
                           />
@@ -238,7 +238,7 @@ export default function SettingsPage() {
                             className="sr-only"
                           />
                         </label>
-                        {avatarPreview && avatarPreview !== "/placeholder.svg?height=100&width=100" && (
+                        {avatarPreview && avatarPreview !== "/cartoon-black-man-with-sunglasses-jacket-generative-ai_955925-34025.jpg?height=100&width=100" && (
                           <Button
                             type="button"
                             variant="outline"
@@ -431,7 +431,7 @@ export default function SettingsPage() {
                       >
                         <div className="mb-4 rounded-md border p-2 w-full">
                           <img
-                            src="/placeholder.svg?height=100&width=200&text=Minimal"
+                            src="/sophisticated-full-landing-page-with-word-quotdesign-studio-portfolio_1269188-6697.jpg?height=100&width=200&text=Minimal"
                             alt="Minimal Template"
                             className="w-full h-auto"
                           />
@@ -452,7 +452,7 @@ export default function SettingsPage() {
                       >
                         <div className="mb-4 rounded-md border p-2 w-full">
                           <img
-                            src="/placeholder.svg?height=100&width=200&text=Creative"
+                            src="/project1.jpg?height=100&width=200&text=Creative"
                             alt="Creative Template"
                             className="w-full h-auto"
                           />
@@ -473,7 +473,7 @@ export default function SettingsPage() {
                       >
                         <div className="mb-4 rounded-md border p-2 w-full">
                           <img
-                            src="/placeholder.svg?height=100&width=200&text=Professional"
+                            src="/business-blogging-technology-people-concept-businessman-with-internet-blog-page-laptop-computer-screen-working-office_380164-151555.avif?height=100&width=200&text=Professional"
                             alt="Professional Template"
                             className="w-full h-auto"
                           />

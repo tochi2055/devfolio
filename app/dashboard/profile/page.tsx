@@ -23,7 +23,7 @@ const userData = {
   linkedin: "https://linkedin.com/in/johndoe",
   twitter: "https://twitter.com/johndoe",
   email: "john.doe@example.com",
-  avatarUrl: "/placeholder.svg?height=200&width=200",
+  avatarUrl: "/cartoon-black-man-with-sunglasses-jacket-generative-ai_955925-34025.jpg?height=200&width=200",
   joinDate: "January 2023",
   portfolioViews: 142,
   projectCount: 3,
