@@ -12,3 +12,4 @@ export function formatDate(date: string | number | Date): string {
     day: 'numeric',
   }).format(new Date(date));
 }
+  
